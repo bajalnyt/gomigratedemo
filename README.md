@@ -17,6 +17,13 @@ docker run -d \
 
 ## psql
 
+To get to the `psql` prompt, you can exec into above container. (Alternately you can use a client such as postico)
+```
+docker exec -it <container id> sh
+su - postgres
+psql
+```
+
 * `\l` : List all databases
 * `\c postgres` : Switch to using db named postgres
 * `\dt` : List tables. 
