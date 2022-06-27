@@ -27,12 +27,13 @@ docker run -d \
 
 Install the go-migrate cli using homebrew: `brew install golang-migrate`.
 
-Run the following command to create a new migration (Already present in this repo). It will create an up file and a down file in the `db/migrations` folder.
+Run the following command to create a new migration (Already present in this repo). It will create an up file and a down file in the `db/migrations` folder:
+
 `migrate create -ext sql -dir db/migrations -seq create_account_table`
 
 (Alternately, use the make command `make create-migration seq=create_account_table`)
 
-## Run the program
+## Execute the program
 
 `go run main.go`
 
